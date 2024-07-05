@@ -1,0 +1,82 @@
+@font-face {
+    font-family: kiwisoda;
+    src: url(/data/font/KiwiSoda.ttf);
+}
+
+html {
+    --lightgreen: #aeed51;
+}
+
+* {
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    cursor: url(https://cur.cursors-4u.net/user/use-1/use129.ani), url(https://cur.cursors-4u.net/user/use-1/use129.png), auto !important;
+    scrollbar-color: hotpink transparent;
+    scrollbar-width: thin;
+}
+
+::selection {
+    background: white;
+    color: black;
+}
+
+img:hover {
+    filter: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hotpink;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lightskyblue;
+}
+
+
+body {
+    font-family: 'ms pgothic', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: rgb(80, 80, 80);
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+    font-family: kiwisoda, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}

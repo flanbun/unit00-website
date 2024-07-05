@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>UNIT-00</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+		p + p {
+			margin-top: 0px;
+		}
+		
+		h1,h2,h3,h4,h5,h6 {
+			margin: 0;
+		}
+
+		.layout {
+			width: 100%;
+			max-width: 650px;
+			margin: 50px auto;
+		}
+
+		.row {
+			display: flex;
+			gap: 5px;
+			width: 100%;
+			padding: 0px;
+			background: 0;
+			border: 0;
+			font-family: inherit;
+			font-size: inherit;
+			position: relative;
+			
+		}
+
+		.row:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+		.row + .row {
+			margin-top: 15px;
+		}
+
+		.subsection-title {
+			font-size: 24px;
+			border-bottom: 1px dotted black;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+
+		.icon {
+			height: 150px;
+			width: 150px;
+			border: 1px solid black;
+			background: lightgray;
+			flex-shrink: 0;
+			filter:grayscale(1);
+			transition: 0.2s;
+		}
+
+		.icon > img {
+			width: 100%;
+			height: auto;
+			image-rendering: pixelated;
+		}
+
+		.icon:hover {
+			filter: grayscale(0);
+		}
+
+		.desc {
+			flex-grow: 1;
+			height: 150px;
+			border: 1px solid black;
+			background: white;
+			padding: 15px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+
+			overflow-y: hidden;
+		}
+
+		.link {
+			font-weight: bold;
+			position: absolute;
+			bottom: -5px;
+		}
+
+		.link > a {
+			color: blue;
+			text-shadow: -1px -1px white, 1px 1px white, -1px 1px white, 1px -1px white, 0 0 3px black;
+			text-decoration: none;
+		}
+
+		.link > a:hover {
+			font-style: italic;
+			color: blueviolet;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="layout">
+		<div>
+			<h1>
+				Unit-00 OC Page.
+			</h1>
+			<p>
+				Welcome! Hover over the images to view them in color. Click 'Read more' to, well, read more. Some pages may not exist yet - sorry about that.
+			</p>
+			<p>
+				Looking for <a href="/homestuck/fantroll/">fantrolls?</a>
+			</p>
+		</div>
+		
+		<div class="subsection-title">
+			<h1>ISE</h1>
+		</div>
+		<div class="subsection-title">
+			Executive
+		</div>
+		<div class="row">
+			<div class="icon">
+				<img src="https://file.garden/Zkk-azEbhyHsv9a-/oc%20icons/fibrea.png">
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Fibrea</strong> is not a girl. Fibrea is a robot. Fibrea's favorite movie is Singing in the Rain. Fibrea knows you, and loves you anyway.
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="subsection-title">
+			Royal Flush
+		</div>
+		<div class="row">
+			<div class="icon">
+				<img src="https://file.garden/Zkk-azEbhyHsv9a-/oc%20icons/kokoro.png">
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Kokoro</strong> is a girl who likes to sit in her room. She does not know you, but probably loves you anyway.
+				</p>
+				<p>
+					Kokoro is her mother's daughter. Kokoro does not want to be her mother's daughter. She will ruin herself with this wishful thinking.
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="icon">
+				<img src="https://file.garden/Zkk-azEbhyHsv9a-/oc%20icons/taki.png">
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Taki</strong> is a boy with a fear of apples. He is jovial regardless. He is trapped in this life and looks forward to finally dying.
+				</p>
+				<p>
+					Taki wants to someday go home. Taki does not have a home. He hopes to make one for himself.
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="icon">
+
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Pepron</strong> is not his real name. He's too cowardly of a man to say his real name. This is all the vulnerability he can afford. Unless you're his little one - then he'll take far more than he can afford.
+				</p>
+				<p>
+					<em>Pony's Pizza... Pepron speaking, what can I get you...</em>
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="icon">
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Harpoc</strong> is everyone's favorite person, and nobody's favorite celebrity. He has a lot on his plate, and will finish it all, anyway. Dying is the most impactful thing they have ever done.
+				</p>
+				<p>
+					The smoke and mirrors and limelight will not consume her. She is the same as always.
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="icon">
+			</div>
+			<div class="desc">
+				
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+
+		<div class="subsection-title">
+			<h1>Other</h1>
+		</div>
+		<div class="row">
+			<div class="icon">
+				<img src="https://file.garden/Zkk-azEbhyHsv9a-/oc%20icons/miep.png">
+			</div>
+			<div class="desc">
+				<p>
+					<strong>Miep</strong> is not a nun. Miep cannot become a nun. Miep has too many debts to pay for that. Or so says Sister Maud.
+				</p>
+				<p>
+					Miep has a cat and a sword and a lake full of moon. Miep has a fate to meet and a guilty conscious. Miep is kind and strong but not girl enough to be pretty.
+				</p>
+			</div>
+			<div class="link">
+				<a href="/ocs/">
+					Read more
+				</a>
+			</div>
+		</div>
+		
+		<p><a href="/home.html">Go home?</a></p>
+	</section>
+
+</body>
+</html>

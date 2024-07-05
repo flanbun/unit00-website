@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit-00 loves you!</title>
+
+    <link rel="stylesheet" href="/data/css/main.css">
+
+    <style>
+        .layout {
+            width: 100%;
+            max-width: 850px;
+            height: 600px;
+
+            display: grid;
+            grid:
+                "topbox mapbox" 1fr "bottombox mapbox" 1fr / 1fr 1fr;
+            gap: 8px;
+            margin: 150px auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin: 5px auto;
+            background: lightyellow;
+            border-radius: 50%;
+            border: 3px outset rgb(255, 255, 179);
+        }
+
+        h1::before {
+            content: '! ';
+        }
+
+        h1::after {
+            content: ' !';
+        }
+        
+        hr {
+            height: 1px;
+            border: 0;
+            border-top: 1px dashed var(--lightgreen);
+        }
+
+        .topbox {
+            grid-area: topbox;
+        }
+
+        .mapbox {
+            grid-area: mapbox;
+        }
+
+        .bottombox {
+            grid-area: bottombox;
+            border: 1px solid;
+        }
+
+        .info {
+            border: 1px solid pink;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .sitemap {
+            border: 1px solid lightblue;
+            padding: 10px;
+            height: 100%;
+        }
+
+        .map {
+            border: 1px dotted gray;
+            height: 400px;
+            overflow-y: auto;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="layout">
+        <div class="topbox">
+            <div class="info">
+                <h1>Site Information</h1>
+                <p>
+                    This entire site was developed by <a href="/about.html">Paws</a>. It's made with love!
+                </p>
+                <p>
+                    This site was coded on Visual Studio Code with Live Preview.
+                </p>
+                <p>
+                    This site was coded for Firefox(...ish) at a resolution of 1920x1080. Viewers can zoom in and out as needed to view it properly.
+                </p>
+                <p>
+                    This site was inspired by <a href="https://bisuko.neocities.org/">bisuko</a>, <a href="https://callus.neocities.org/">callus</a>,
+                    <a href="https://ruralrose.neocities.org/">ruralrose</a>, <a href="https://tomorrowsbreakfast.neocities.org/">tomorrowsbreakfast</a>, and <a href="https://komichi.neocities.org/">komichi</a>!
+                </p>
+                <p>
+                    This only person this site is a safe space for is, well, me!
+                </p>
+                <p>
+                    This site uses MS PGothic, as well as pixel fonts from <a href="https://fontenddev.com/">Jeti @ fontenddev</a>!
+                </p>
+                <p>
+                    This site uses a variety of graphics that I've found across the web. I've tried my best to ensure that everything I've used is F2U, but if you see something that's yours (or that you know isn't F2U), <a href="mailto:humansongs@proton.me">please send me an email</a>!
+                </p>
+            </div>
+        </div>
+        <div class="bottombox">
+            bottombox
+        </div>
+        <div class="mapbox">
+            <div class="sitemap">
+                <h1>
+                    Sitemap
+                </h1>
+                <p>
+                    A number of these pages may not be functional as I continue to deconstruct, reconstruct, and add to my website! Mind the dust, and sorry for the inconvenience.
+                </p>
+                <div class="map">
+                    <ul>
+                        <li><a href="/">Landing / Index</a>: The index! What you see when you first open my site.</li>
+                        <li><a href="/home.html">Home</a>: The HQ of my site! Contains links to wherever else... including this page.</li>
+                        <li><a href="/about.html">About Me</a>: An introduction to me, the webmaster.</li>
+                        <li><a href="/site.html">About the Site</a>: All about the site! Contains information on site production, other sites I like, and the sitemap. <span style="font-weight: bold;">You are here!</span></li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li><a href="/me/blog/index.html">Blog</a>: My blog! This is where I write about me and my life.</li>
+                        <li><a href="/me/art/">Art</a>: My art gallery! This is where I archive my art.</li>
+                        <li><a href="/me/homestuck/">Homestuck</a>: Homestuck....
+                        <ul>
+                            <li><a href="/me/homestuck/fanfic/">Fanfiction</a>: An archive of my Homestuck fanfictions.</li>
+                            <li><a href="/me/homestuck/fantroll/">Fantrolls</a>: An archive of all my fantroll business, including but not limited to profiles, roleplay logs, et cetera...</li>
+                        </ul></li>
+                        <li><a href="/me/media/">Media</a>: Where I document my thoughts on media I listen to. Mostly music!</li>
+                        <li><a href="/me/oc/">OCs</a>: My original characters! It gets serious.</li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li><a href="/you/graphics/">Graphics</a>: Graphics I've collected and made for you to use on your site!</li>
+                        <li><a href="/you/templates/">Templates</a>: Templates I've made for you to use on your site!</li>
+                        <li><a href="/you/resources/">Resources</a>: More resources I've found across the web for you to use for your site... or other things!</li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li>(Off-site) <a href="">Guestbook</a>: Leave me a note!</li>
+                        <li><a href="/etc/newsletter.html">Newsletter</a>: The newsletter! Contains updates on the site and me, posted every few weeks or so.
+                        <ul>
+                            <li><a href="/etc/oldupdates.html">Old Updates</a>: An archive of older updates on the site!</li>
+                        </ul></li>
+                        <li>
+                            (Off-site) <a href="">Neocities Profile</a>: My profile on Neocities! Leave a follow (if you want, lol)!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

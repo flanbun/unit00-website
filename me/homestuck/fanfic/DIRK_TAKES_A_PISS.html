@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>DIRK TAKES A PISS - golgothanTerror (oblivionyellow) - Homestuck</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/tte2ttp.css">
+
+  <style>
+    #home {
+      position: fixed;
+      left: 10px;
+      bottom: 10px;
+      font-size: 36px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: gray;
+      text-decoration: 1px dotted underline;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    .title {
+      color: #f2a400;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: bold;
+      font-size: 50px;
+      text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    }
+
+    .chapter.preface.group .title {
+      visibility: hidden;
+      line-height: 0;
+    }
+
+
+    .kaomoji {
+      text-align: center;
+      color: #e00707;
+      font-family: "Comic Sans MS";
+      font-weight: bold;
+      font-size: 50px;
+      text-shadow: 2px 2px white, 4px 4px black, 6px 6px black, 8px 8px black;
+    }
+
+    .davewrite {
+      text-align: center;
+      color: #e00707;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .text {
+      width: 90%;
+      font-weight: bold;
+      font-size: 18px;
+      font-family: courier new, courier;
+      color: #000000;
+    }
+
+    .h1 {
+      font-size: 200%;
+      width: 60%;
+      font-family: Georgia;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .h2 {
+      font-size: 150%;
+      width: 50%;
+      font-family: Georgia;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .h3 {
+      font-size: 110%;
+      width: 40%;
+      font-family: Georgia;
+      text-align: center;
+    }
+
+    .narrative {
+      text-align: left;
+      text-indent: 20px;
+      width: 100%;
+      font-size: 1.2em;
+      font-family: adobe-garamond-pro, serif;
+      color: #000000;
+    }
+
+    .dirknarrative {
+      text-align: left;
+      text-indent: 20px;
+      width: 90%;
+      font-size: 1.3em;
+      font-family: adobe-garamond-pro, serif;
+      color: #1f9400;
+    }
+
+    .ao3like {
+      font: Lucida Grande, Lucida Sans Unicode, Verdana, Helvetica, sans-serif;
+      width: 88%;
+      font-size: 1em;
+      padding-top: 0px;
+    }
+
+    .fakenotes {
+      background: transparent;
+      border-bottom: 1px solid;
+      font-family: Georgia, serif;
+      font-weight: 400;
+      font-size: 1.286em;
+      line-height: 1;
+      width: 90%;
+      padding-bottom: 0px;
+    }
+
+    .block {
+      font-weight: bold;
+      font-size: 18px;
+      font-family: courier new, courier;
+      text-align: left;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px dashed #808080;
+      padding-top: 19px;
+      padding-bottom: 19px;
+      padding-left: 19px;
+      padding-right: 19px;
+    }
+
+    .AR,
+    .dave,
+    .ARquiusprite {
+      font-size: 18px;
+      width: 90%;
+      font-weight: bold;
+      font-family: courier, monospace;
+      color: #e00707;
+    }
+
+
+    .bro,
+    .davesprite,
+    .dirk {
+      font-size: 18px;
+      width: 90%;
+      font-weight: bold;
+      font-family: courier, monospace;
+      color: #f2a400;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Lucida Grande,Lucida Sans Unicode,Verdana,Helvetica,sans-serif;
+      margin: 3em;
+    }
+
+    .dirk {
+      font-family: 'Courier New', Courier, monospace;
+      color: #f2a400;
+      font-weight: bold;
+    }
+
+    .jake {
+      font-family: 'Courier New', Courier, monospace;
+      color: #1f9600;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+    }
+
+    p.message {
+      text-align: center;
+    }
+
+    .meta h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+
+
+    .meta h2 {
+      font-size: 1.25em;
+      text-align: center;
+    }
+
+    .meta h2 {
+      page-break-before: always;
+    }
+
+    .meta .byline {
+      text-align: center;
+    }
+
+    .meta dl.tags {
+      box-shadow: 0px 2px 10px black;
+      padding: 1em;
+    }
+
+    .meta dd {
+      margin: -1em 0 0 10em;
+    }
+
+    .meta .endnote-link {
+      font-size: .8em;
+    }
+
+    /* List child related works under the labeling dt */
+    #afterword .meta dd {
+      margin: 1em 0 0 1em;
+    }
+
+    #chapters {
+      width: 100%;
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    .userstuff {
+      padding: 1em;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Invisible headings to help Calibre make a Table of Contents */
+    .toc-heading {
+      display: none;
+    }
+
+    .header {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      border-bottom: 2px dashed black;
+      font-size: 24px;
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="home">
+    <a href="/homestuck/fanfic/">
+      ← Back
+    </a>
+  </div>
+  <div id="preface">
+    <h2 class="toc-heading">Preface</h2>
+    <p class="message">
+      <b class="title">DIRK TAKES A PISS</b><br />
+      Posted originally on the <a href="http://archiveofourown.org/">Archive of Our Own</a> at <a
+        href="http://archiveofourown.org/works/31783993">http://archiveofourown.org/works/31783993</a>.
+    </p>
+    <div class="meta">
+      <dl class="tags">
+        <dt>Rating:</dt>
+        <dd><a href="http://archiveofourown.org/tags/Teen%20And%20Up%20Audiences">Teen And Up Audiences</a></dd>
+        <dt>Archive Warning:</dt>
+        <dd><a href="http://archiveofourown.org/tags/No%20Archive%20Warnings%20Apply">No Archive Warnings Apply</a></dd>
+        <dt>Category:</dt>
+        <dd><a href="http://archiveofourown.org/tags/M*s*M">M/M</a></dd>
+        <dt>Fandom:</dt>
+        <dd><a href="http://archiveofourown.org/tags/Homestuck">Homestuck</a></dd>
+        <dt>Relationship:</dt>
+        <dd><a href="http://archiveofourown.org/tags/Jake%20English*s*Dirk%20Strider">Jake English/Dirk Strider</a></dd>
+        <dt>Characters:</dt>
+        <dd><a href="http://archiveofourown.org/tags/Jake%20English">Jake English</a>, <a
+            href="http://archiveofourown.org/tags/Dirk%20Strider">Dirk Strider</a>, <a
+            href="http://archiveofourown.org/tags/Dave%20Strider%20(mentioned)">Dave Strider (mentioned)</a></dd>
+        <dt>Additional Tags:</dt>
+        <dd><a href="http://archiveofourown.org/tags/Trans%20Dirk%20Strider">Trans Dirk Strider</a>, <a
+            href="http://archiveofourown.org/tags/Trans%20Character">Trans Character</a>, <a
+            href="http://archiveofourown.org/tags/Trans%20Male%20Character">Trans Male Character</a>, <a
+            href="http://archiveofourown.org/tags/a%20lot%20of%20transgenderisms%20here">a lot of transgenderisms
+            here</a>, <a href="http://archiveofourown.org/tags/Nonbinary%20Jake%20English">Nonbinary Jake English</a>,
+          <a href="http://archiveofourown.org/tags/Meet-Cute">Meet-Cute</a>, <a
+            href="http://archiveofourown.org/tags/but%20in%20reality%20its%20actually">but in reality its actually</a>,
+          <a href="http://archiveofourown.org/tags/meet%20ugly">meet ugly</a>, <a
+            href="http://archiveofourown.org/tags/Dirty%20Jokes">Dirty Jokes</a>, <a
+            href="http://archiveofourown.org/tags/packers">packers</a>, <a
+            href="http://archiveofourown.org/tags/this%20is%20NOT%20A%20FETISH%20FIC%20o7">this is NOT A FETISH FIC
+            o7</a>, <a href="http://archiveofourown.org/tags/Comedy">Comedy</a>, <a
+            href="http://archiveofourown.org/tags/theme-appropriate%20dick%20talk">theme-appropriate dick talk</a>, <a
+            href="http://archiveofourown.org/tags/HTML*s*CSS%20Heavy">HTML/CSS Heavy</a>, <a
+            href="http://archiveofourown.org/tags/oh*d*%20wait%20also">oh. wait also</a>, <a
+            href="http://archiveofourown.org/tags/Potty%20Humor">Potty Humor</a>, <a
+            href="http://archiveofourown.org/tags/sorry*d*">sorry.</a>, <a
+            href="http://archiveofourown.org/tags/alternate%20universe%20-%20mall">alternate universe - mall</a>, <a
+            href="http://archiveofourown.org/tags/Queer%20Themes">Queer Themes</a>
+        </dd>
+        <dt>Language:</dt>
+        <dd>English</dd>
+        <dt>Stats:</dt>
+        <dd>
+          Published: 2021-06-06
+          Words: 4,106
+          Chapters: 1/1
+        </dd>
+      </dl>
+      <h1 class="title" style="font-size: 36px">DIRK TAKES A PISS</h1>
+      <div class="byline">by <a rel="author"
+          href="http://archiveofourown.org/users/oblivionyellow/pseuds/golgothanTerror">golgothanTerror
+          (oblivionyellow)</a></div>
+
+      <p class="header">Summary</p>
+      <blockquote class="userstuff">
+        <p>You, DIRK STRIDER, have needed to urinate since approximately 10AM. That was around four hours ago. There are
+          no working restrooms in this realm of literature due to somebody taking a shit equivalent to a weapon of mass
+          destruction in the men’s restroom, so the only comfort rooms nearby are outside the front doors and settled in
+          a corridor in between a GameStop and a Uniqlo. Once you're freed from the shackles of work that capitalism has
+          placed upon you, you're pretty much raring to go and take a piss.</p>
+        <p>BUT. (Colors invert, image flips vertically.) You make a tragic mistake.</p>
+        <p>TL;DR - Don't drop your packer in the stalls.</p>
+      </blockquote>
+
+      <p class="header">Notes</p>
+      <blockquote class="userstuff">
+        <p>disclaimer i have never worked at a mall. or a barnes and noble. or anywhere, actually. forgive my mistakes.
+        </p>
+        <p>EDIT 08/18/2023: <b>now with an <a
+              href="https://docs.google.com/document/d/1Y5MD24uryL7oSmOqG6tPMC7mlrSBvuQI1tv7Wb77h-M/edit?usp=sharing"
+              rel="nofollow">ILLUSTRATED PART 2</a> courtesy of <a href="https://twitter.com/zan0tix" rel="nofollow">zan0tix on
+              twitter</a>!!!!!!!</b> genuinely fabulous incredible fantastic work, PLEASEEE check it out and give him a
+          follow!</p>
+      </blockquote>
+    </div>
+  </div>
+  <div id="chapters" class="userstuff">
+    <h2 class="toc-heading">DIRK TAKES A PISS</h2>
+    <div class="userstuff">
+      <p class="narrative">The reality of working at a bookstore is not as romantic as you may think.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Like, OK. You can agree that it’s pretty fucking sick to be in close proximity to the modern
+        Library of Alexandria, VA, also known as Barnes and Noble, at all times, susceptible to their common overstocks
+        of obscure shoujo manga that they so dutifully pass onto you when no one buys off the last few bits. It’s pretty
+        sick to have a cafe that serves Starbucks in-store. It’s pretty sick to work in a store so large and so full of
+        labyrinthian shelves.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">The aisles are excellent hiding material, actually. They’re how you spent a solid third of
+        your shift today, the part not occupied by dealing with customers who either misread your nametag and called you
+        Dick instead of your proper moniker, <span class="dirk"> <b>Dirk</b> </span> or who not-so-subtly flirted with
+        you and casted salacious glances at your admittedly fat ass. Well, maybe not fat. More like… muscular. “Fat” is
+        better reserved for <span class="jake"> <b>someone else</b></span>.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Anyway, the back of the children’s section is a pretty comfy area; usually sparsely
+        populated. The rugs are expectedly softer than the carpet and hardwood around the rest of the store, and make
+        for a nice cushion substitute to plant your ass on while you adroitly defile another poor copy of <span
+          class="text"><a href="https://archiveofourown.org/works/2427119" rel="nofollow">Pony Pals</a></span> with
+        glittery neon orange gel pen for your personal enjoyment. </p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>THE LABELING MACHINE: stolen. </b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>MAISIE FROM THE REGISTERS: aggravated. </b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>PAST YOU, THOROUGHLY AND WHOLLY IMBUED WITH THE HEAPING SPIRIT OF SCHADENFREUDE, HALFWAY THROUGH A CRUDE
+          DEPICTION OF EQUINE YAOI ROMANCE: Crocker is going to fucking love this.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Plus, unwelcome encounters are typically kept to a minimum while you’re implanted in the
+        furthest ring of the store. There’s the exception of the little girl with great taste who stumbled upon you and
+        asked what the blatantly phallic shape you were drawing was, and you had to pass it off as a flower in training,
+        but you didn’t really mind her at all. She was chill. Amaya, good luck with your horseback lessons on Saturday
+        at 9:45 AM. You can wake up early. I believe in you.</p>
+      <p class="narrative"> </p>
+      <p><span class="narrative">You’re better suited for the back, anyway. Try to walk to the front, and your shitty
+          manager, this dumbass camp gay man named Broderick who walks around with his collar popped and guns out like
+          it ain’t no thang, will put you on greeting duty with zero chance of argument. It’s to add a welcoming
+          atmosphere to the branch, apparently, and to strengthen relationships with the shops around you because the
+        </span> <span class="jake"> <b>total Adonis from GameStop</b> </span> <span class="narrative"> just loves
+          smiling at you and trying to be the best distraction he possibly can for whatever fucking reason. This is
+          where your problem begins.</span></p>
+      <p class="narrative"> </p>
+      <p class="narrative">See, every man and woman and person of unspecified gender identity has their basic human
+        needs. You are not exempt to this, as much as you would like to be. They are as listed.</p>
+      <p class="narrative"> </p>
+      <p class="text"> </p>
+      <ul>
+        <li class="text"><b>Sleep (unfortunately).</b></li>
+      </ul>
+      <ul>
+        <li class="text">Food.</li>
+      </ul>
+      <ul>
+        <li class="text">Water.</li>
+      </ul>
+      <ul>
+        <li class="text">The expulsion of the last two.</li>
+      </ul>
+      <p class="narrative"> </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You, <span class="dirk"><b>DIRK STRIDER</b></span> , have needed to urinate since
+        approximately 10AM. That was around four hours ago. There are no working restrooms in this realm of literature
+        due to <em> somebody </em> taking a shit equivalent to a weapon of mass destruction in the men’s restroom, so
+        the only comfort rooms nearby are outside the front doors and settled in a corridor in between a GameStop and a
+        Uniqlo. Stepping within 30 feet of the entrance leading in from the mall will no doubt result in your boss
+        appearing the fuck out of nowhere like he usually does and peer pressuring your poor ass into being the store’s
+        resident People Person, which you, by all means, most definitely are not. You don’t feel like putting on your
+        shittiest “Cheesed to meet you” grin and saying hello to every disinterested schmuck who happens to so much as
+        stick their nose past the divide between the mall’s concrete and the bookstore’s hardwood floors, so you’re left
+        to the harrowing duty of developing a kidney stone. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Holy shit. You’re not into this stuff. Wetting your pants. Watersports. Omorashi, as some of
+        notably exotic/poor tastes may call it. The good ol’ golden shower is not your preferred mode of ablutions. As
+        you sit up against a shelf of SAT/PSAT study materials with a vandalized copy of <span class="text"><em> The
+            Girl Who Hated Ponies (Pony Pals #13) </em></span> by Jeanne Betancourt clutched to your chest and your eyes
+        trained on the clock on the opposite wall, the aching pain of pee held in for the past century and then some
+        begins to permeate your abdomen. You reiterate: you are not into this stuff. Maybe if you were just half a
+        percent kinkier and physically able to, you would pop a boner at this. But you are not.</p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>THE CLOCK, TAUNTINGLY: tick, tock.</b>
+      </p>
+      <p class="text">
+        <b>THE CLOCK: tick, tock.</b>
+      </p>
+      <p class="text">
+        <b>THE CLOCK: tick, tock.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU, PAINED: On the clock; DJ, blow the speakers up.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative"> Oh, how you wish Ke$ha could save you now.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You should start wearing adult diapers. This incident by itself is going to force you to go
+        through the rounds of geriatric bed-wetting prevention at the age of twenty. Maybe this is your mid-life crisis.
+        Maybe you’re gonna die of kidney failure at forty from a stone the size of a golf ball. No, that’s undershooting
+        it. A baseball. A football. You’re going to get stuck in the casket with extraneous flabs of skin jutting out of
+        your sides after your abdomen’s been stretched like a keloid scar and you’ll look like Violet Beauregarde. No
+        offense to the gal, but you are <em> not </em>up to becoming a blueberry. Inflation is not your thing. You’re
+        into some weird shit, some weird, weird, completely depraved shit, but this is n--</p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>YOUR PHONE: Bzzt.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You almost piss yourself right there, but then you’re up and out, label maker left
+        haphazardly on the floor and <span class="text"><em>Pony Pals</em></span> tucked under your arm while you make a
+        mad dash to grab your shit and <em> leave. </em> That’s it. You’re gone. Fuck you, Maisie. Your shorts look like
+        shit with that shirt. When will you learn that purple doesn’t go with green? Jesus Christ. Greg better stop
+        giving you that look. He’s gotta switch out his shitty little skinny tie. Fuck that guy. He might be cute, but
+        that’s no excuse.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">The exit is in your line of sight. Name tag off, your belt bag slash fanny pack, as it’s
+        known colloquially, slung over your shoulder, and you’re off to the urinals, the WC, the--</p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>BRO: bro.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Sweet fuckin’ Jesus on the goddamn cross. Christ’s impaled hands and feet.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re met with Bro[derick]’s stone-cold complexion, long nose jutting into your point of
+        view. Dude’s leaning down at you, staring at you through his Kamina shades that you unashamedly copied.
+        Reclaiming them like a slur, you think. You pull them off better than he does, anyway. Young and sprightly
+        versus his aged cheddar cuckery. He’s unreadable, as usual, but you purse your lips up at him and wait for
+        further address.</p>
+      <p class="narrative"> </p>
+      <p class="text">
+        <b>BRO: you signed out.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Yeah.</b>
+      </p>
+      <p class="text">
+        <b>BRO: got all your shit.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Yep.</b>
+      </p>
+      <p class="text">
+        <b>BRO: got nothin under that arm.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Yeah.</b>
+      </p>
+      <p class="text">
+        <b>PONY PALS #13: *Under your arm.*</b>
+      </p>
+      <p class="text">
+        <b>BRO, STARING AT IT:</b>
+      </p>
+      <p class="text">
+        <b>PONY PALS #13: *Pretty fucking frightened.*</b>
+      </p>
+      <p class="dirk">
+        <b>YOU, SHUFFLING PONY PALS #13 CLOSER TO YOU WITH PATERNAL POSSESSIVENESS: We done here?</b>
+      </p>
+      <p class="text">
+        <b>BRO:</b>
+      </p>
+      <p class="text">
+        <b>BRO, SUSPICIOUSLY: yea.</b>
+      </p>
+      <p class="narrative"><br />
+        <br />
+      </p>
+      <p class="narrative">A psychologically distressing encounter with the one and only Broderick Noname is not exactly
+        how you wanted to end your shift at work, but so be it.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">…</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Who the fuck are you even kidding? That’s how this shit always ends, now that you think about
+        it. The guy clearly has no social sense, not even a little bit, and you have literally zero idea how he worked
+        up the B&amp;N ranks with this kind of constant passive aggression. Maybe… bookkeeping is more hardcore than you
+        thought. Or this is his weird way of showing that he cares about you. Or maybe this is an example of his passion
+        towards managing a fucking mall bookstore.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Weird dude. But you can respect his taste in puppets. He’s got a transcendent design on his
+        lanyard.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Alas, ye olde water closet resides right over yonder, and you are MOST pleased to become
+        reacquainted with the john. Your bladder’s getting overexcited, though, and you refuse to piss your pants. You
+        absolutely refuse to let it drip - hell no, you left the Beyblades in seventh grade. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You crash through those blessed doors, into the realm of urine and shittery, the former of
+        which you’ll be indulging in on this very day, hopefully within the hour. There’s one (1) dude stationed in
+        front of the urinals, but you, being a man of alternative preference, decide to make yourself at home in the
+        furthest stall from the door. You stride (pun intended) down there with no shame, slowing your pace for the sake
+        of a single masculine upnod at the dude with his fly unzipped, and once the door is closed and locked…</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re at work with your belt. The tip of the leather comes out. The buckle, unclasped. Both
+        ends, hanging limp at your sides.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Fuck yeah, baby -- it’s piss time.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You opt for the classic, functional everything-down-at-once move: skinny jeans, briefs, <em>
+          and </em> your fine ass onto the toilet seat (after you place the disposable toilet seat cover down,
+        obviously). You’re a multitasker. A modern working man. You need efficiency in your life in all realms, and that
+        includes pissing.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">The thing is, when you do that outside the safety of your own home, you have a few more
+        priorities to take care of. You, in this instance, forgot about these priorities. </p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU FUCKING HALFWIT: (OH FUCKJFLJDDSJCDSF.)</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You watch in horror as your packer tumbles out of your briefs onto the ground.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Naturally, you try to make a break for it, lunging forward, but your body has betrayed you
+        and jumped forward to the act of relieving itself. You’re… somewhat? Relieved, but. You know.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">I mean -- or, well, <em> you </em> mean, your dick just fell out, basically. And it’s rolling
+        away. Into another stall. And you don’t know if the other stalls are occupied, and frankly, you’re too fucking
+        scared to check, because imagine seeing a silicone cock roll past your feet and then someone’s face peeking at
+        it from a stall a ways away. That would out you, and while you’re not that concerned about whether or not people
+        know if you’ve got a schlong or not down in your extremities, you also don’t know anyone here. For all you know,
+        the hypothetical dude in the stall next to you could be a raging queerphobe, and might kick you in the face at
+        the sight of your ludicrous, faggoty ass.</p>
+      <p class="narrative"> </p>
+      <p><span class="narrative">You watch your masculinity slip away before you. Your heart wrenches. </span> <span
+          class="dirk"> <b>Goodbye, Little D. &lt;/3</b> </span></p>
+      <p class="narrative"> </p>
+      <p class="narrative">Holy shit.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You are a parody of yourself.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re still pissing while your cock runs away from home.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">It occurs to you that this is your first piss of the day. What a pitiful thought. Is this how
+        you live? Waking up in the morning and leaving for work, without even the blissful, customary wake-up routine of
+        emptying the radiator in the AM? You always wake up late as shit and have approx. 30 minutes to get dressed,
+        grab a bite, brush your teeth, and head to work. It’s not even like you can’t help it, either -- college fucking
+        <em> sucks </em> , yo. Classes. Assignments that drive you up until 3 AM and then some. It’s just rinse and
+        repeat every single goddamn day. Is this how it’s gonna be until the day you die? Staying up late and waking up
+        a little <em> too </em> late and then not even enjoying a nice hot piss until the end of the work day? It’s two
+        in the afternoon. Are all of your premier pisses going to be at two in the afternoon?
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Wait. Wait, wait, wait.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Are you even going to have a job after you inevitably quit/are fired from this one?</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Fuck.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You slap your hand over your mouth and grimace at the door of the stall. There’s a plethora
+        of curse words scratched into it. A cross. A stick figure. A slur or two. And worst of all, penises. So many
+        penises. Just… penises, littered all over the door. In paint. In ballpoint pen. In knife scratches. In
+        substances that are dubiously… well, they look like they were sticky at some point, but they’re pretty pale and
+        opaque now.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Fuck, are you looking at jizz dicks?</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You wheeze into your palm. It’s a pitiful sound. It’s like something just died, and you’re
+        the something, but you’re also simultaneously watching the scene, and the funeral, and a clip of the thing’s
+        friends and family mourning its death in monochrome with some shitty <a
+          href="https://open.spotify.com/track/3M2bD9SMYnJIPdrTKUnBd3?si=d85be5230aab4ed4" rel="nofollow">Smiths
+          song</a> playing over it. You’re envisioning your funeral now. Dirk Strider, dressed to the T in the
+        tuxedo-printed t-shirt you requested that Dave bury you in, probably with some kind of wizard memorabilia in
+        your hands in lieu of flowers because Roxy’s just an upright 1337 haxxor grl like that. Jane is, of course,
+        sniffling into a handkerchief the way she’s been raised to: prim, proper, not too dramatic for the sake of not
+        bringing those around her down, but also just enough to show that she’s not a coldblooded bitch with no regard
+        for one of her besties for the resties. Roxy, on the other hand, is waterfalling it up like a Six Flags
+        waterpark. Fuck yeah, it’s the Pacific Ocean in the making over here. You could make a creation myth out of this
+        shit, what with all the saltwater pouring out of her eyes.</p>
+      <p class="narrative"> </p>
+      <p><span class="narrative">God, you could cry. You could leak fluids out of several orifices right now, and only
+          one of them is on your lower half. This is what’s gonna happen. This is what your shitty pissing schedule is
+          signifying. Holy shit, your fucking pseudodi</span> <span class="jake">Um.</span></p>
+      <p class="jake"> </p>
+      <p class="jake">
+        <b>HOLY FUCKING SHIT: Excuse me?</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">HOLY FUCKING SHIT.</p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU, ELOQUENTLY SIGNIFYING THAT YES, THERE’S ANOTHER PERSON THERE: Nnnnh?</b>
+      </p>
+      <p class="jake">
+        <b>HOLY FUCKING SHIT THIS IS THE WORST DAY EVER: I.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">A thud, which you assume is a kick, and Lil’ Dirkdick comes rolling back into the scene
+        through stage left. You stare incredulously.</p>
+      <p class="narrative"> </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE WITH BUCKTEETH AND A DAZZLING SMILE/YOUR NEWFOUND SAVIOR, FROM ONE STALL OVER: I believe
+          you mightve misplaced your willy? </b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You. He. What. Wiener. He said wiener. He said wiener? And he just kicked your silicone
+        peenie weenie back to you without a second thought. You summon the deepest voice you possibly can to reply to
+        him.</p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU, MANLY AS FUCK: Yeah. Thanks, bro.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE, WHOSE SMILE YOU CAN HEAR THROUGH HIS VOICE HOLY FUCKING FUCK: Oh! Right chipper then.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re feeling pretty kaomoji right now. Here’s an adequate descriptor:</p>
+      <p class="narrative"> </p>
+      <p class="kaomoji">
+        <b>（ﾟﾛﾟ; 三 ;ﾟﾛﾟ)ﾋｲｲｲｨｨ（ﾟﾛﾟ; 三 ;ﾟﾛﾟ)ﾋｲｲｲｨｨ</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You pick your dick up off the ground and, as you’re bending over, catch a glance of a thumbs
+        up from about three partitions away. His pants are not bunched up by his feet. Dude isn’t even shitting. Why are
+        you paying attention to that? He’s giving you a fucking <em> thumbs up. </em></p>
+      <p class="narrative"> </p>
+      <p class="narrative">You return it, and subsequently have a miniature asthma attack as you stuff your rubber willy
+        back into the pocket in your briefs. You don’t even have asthma. But -- but can you <em> blame </em> you when
+        resident utility pants-wearing accent-having GameStop should-be-an-incel-but-isn’t tanned-to-perfection
+        beefy-bucktooth dreamboat from Homo Junction, Sodomite Republic just kicked your goddamn packer back to you?
+        Really. Really.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Again, you are a parody of yourself.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You sit up straight and trace the curve of a particularly detailed phallus inscribed on the
+        wall in front of you. It’s grossly veiny. Incredibly long and thick. The balls attached are purposely grotesque
+        and wrinkly as all hell. Wrinklier than your biological grandfather’s festering corpse six feet deep in some
+        cemetery in Houston. The text under it describes the following: </p>
+      <p class="narrative"> </p>
+      <p class="davewrite">d.s. succs dicc on the d.l.</p>
+      <p class="davewrite">346-555-3714</p>
+      <p class="davewrite">txt dont call</p>
+      <p class="narrative"> </p>
+      <p class="narrative"> You know that handwriting and that phone number. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re in the fucking sunken place.</p>
+      <p class="narrative"><br />
+        <br />
+        <br />
+        <br />
+      </p>
+      <p class="narrative">Yeah, alright. Fine. In a short enough amount of time (with a passable number of 4-7-5 method
+        breathing exercises, and a spunky little GIF you have saved on your phone for when shit gets tough and your
+        lungs decide to quit their job), you’ve got all your shit back together: belt bag, secured; belt, buckled; <span
+          class="text"><em> Pony Pals #13 </em></span>, under your arm; artificial penis, in pant. It’s all good. You’re
+        all good. Now to exit the stall and return back to the world of the living. Right.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Your fingers drift above the lock. You gulp.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Nah, but what if he’s out there?</p>
+      <p class="narrative"> </p>
+      <p class="narrative">Your entire hand trembles. Ok. Yeah. So what if he’s out there? You’ll be fine. You’re a
+        grown man. It was a slip-up. That happens sometimes. Sometimes people just see your schlong because you dropped
+        it on the ground in a public restroom. That happens to plenty of fucking people, so use the balls you purchased
+        from Amazon dot com and get the fuck out there, soldier. Take it like a champ. You’re not a soyboy pussybitch,
+        Dirk. You’re not a fucking pussy.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You open the door, and he’s, like, leaned up against the sinks, and makes eye contact with
+        you for half a second, maybe, before turning away and doing a weird little thing with his lips, and you kind of,
+        sort of, maybe want to cry. Just a little bit. Just a tiny little bit.</p>
+      <p class="narrative"> </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE, TURNING AWAY: *Whistles a jaunty little tune.*</b>
+      </p>
+      <p class="dirk">
+        <b>YOU:</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Uh. Thanks for that, again.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">He looks back at you and has this heartrending little grin on his face, like he didn’t just
+        hand your dick back to you, and nods. Ever so politely. You approach one of the sinks, consciously selecting one
+        a little ways away from him, but he’s got either the gall or general puppy-like cluelessness to move a little
+        closer to you. You decide to focus on the water and how ridiculously fucking hot it is. You receive your
+        allocated quarter-sized dollop of soap from the automatic dispenser, and scrub your hands. First, you jack off
+        your thumb. Next, you interlock your fingers and sort of squiggle them around there. After that, you rub your
+        palms on the backs of your hands, and then work on your wrists.</p>
+      <p class="narrative"> </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: De nada, amigo.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Sooo.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU, TURNING INQUISITIVELY: ...?</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Hows about we make a deal.</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Oh shit.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">He’s gonna blackmail you. This is the end of all things. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re out, mostly, to the rest of your coworkers, Broderick included, and you’re happy to
+        say that your workplace is extremely queer-friendly. It’s not a problem if he tells them. It’s cool. You guys
+        literally went to Pride together last June, and it was there that you learned that it wasn’t your thing, as
+        expected, but it was worth knowing that even Maisie - that fucking conniving, insincere,  <em> Maisie </em> -
+        isn’t homophobic. It’s cool. If he decides to rat you out to them, that’s fine. That’s a non-issue.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">The issue is that if he <em> does </em> threaten to blackmail you, it’s because he’s a cunt.
+        Like, a <em> cunt </em> . And the dude is nice, you’re 100% sure he is, but you never know with men. Especially
+        cis men. Cis men like him. He’s so… gruff, you’d say. Even when he’s smiling at you like that, all colon-end
+        bracket with kawaii shoujo sparkles all up in his frames. He’s got scruff on his chin that he hasn’t bothered
+        shaving, and ungodly amounts of hair all up and down his forearms and some peeking through the unbuttoned top of
+        his shirt, which you’re pretty sure is against the GameStop dress-like-a-virgin unspoken dress code. Besides the
+        utility pants, he looks like he gets <em> mad </em> bitches. Enraged bitches. Furious, loony, nutty-ass bitches.
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">… You know, maybe you’re assuming. Tune back in.</p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU, IDEALLY CALM AND COMPOSED, AT LEAST ON THE OUTSIDE: Sure. Shoot.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE, LOOKING LIKE HE’S GONNA THROW UP: Right.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: I mean.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Well seeing as i retrieved your gutbuster for you.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: WHICH, BY THE WAY, I HAVE *NO ISSUES WITH* I JUST NEEDED TO PREFACE THAT. </b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: **WITH EXTRA ASTERISKS AROUND IT**!!!!</b>
+      </p>
+      <p class="dirk">
+        <b>YOU, SPEECHLESS:</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Ahem anyhoo.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Perhaps you could pay me back?</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Return the favor??? Someway somehow. *If* its convenient for you that is.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: *Tugs at shirt collar sheepishly*</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">Transphobic has been crossed off the list. Chronic dumbass is circled in bright, glittering
+        orange.</p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU: I’m not sending you nudes for this, FYI.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: You gotta pay for that.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: I can text you the link to my Onlyfans if you want. It’s only $5 for a shit ton of content.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE, BRIGHT RED: ***NO***!!!!!!!!!</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Whew that is RIGHT THE FUCK NOT what i meant. At all. At all!!!</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Not to say that it wouldnt a total wonder seeing you sans la-di-das but um. Mooooving
+          on.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Snrk.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: I was actually thinking more along the lines of baked goods.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Baked goods.</b>
+      </p>
+      <p class="jake">
+        <b>GAMESTOP EMPLOYEE: Pretzels?? :)</b>
+      </p>
+      <p class="dirk">
+        <b>YOU:</b>
+      </p>
+      <p class="dirk">
+        <b>YOU:</b>
+      </p>
+      <p class="dirk">
+        <b>YOU:</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: ...Bro.</b>
+      </p>
+      <p class="narrative"><br />
+        <br />
+      </p>
+      <p class="narrative">Auntie Anne’s frozen lemonade mixers are good. Specifically the mango ones. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You’re about twenty dollars less wealthy, but the horde of vital information you’ve obtained
+        is priceless.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You find out that the Discord mod heartthrob is named <span class="jake"><b>JAKE
+            ENGLISH</b></span> , and that he hails from New Zealand and moved to the States for college last year. He
+        doesn’t actually enjoy video games all that much -- more of a film guy, apparently. You manage to wrestle an
+        admission of cerulean-philia from him after he went off on a tangent about the Avatar franchise, which you
+        denounced forthwith. He pouted at you and called you a <span class="jake"><b>party pooper</b></span>, and you
+        revealed that you carry that title with an unhealthy amount of pride. </p>
+      <p class="narrative"> </p>
+      <p class="narrative">This is going much better than you expected. He’s not awkward. Mostly. Usually. At least not
+        more than you are, and that’s good because if he was, you guys would have spoken in circles like one of those
+        mini spinny carousel shits at the playground that Roxy made you hop on last week and spun you around at Mach 10
+        until you felt like your brains were blended and that there was a strawberry smoothie fresh in your cranium for
+        the slurping. Stick a straw in that bitch and Jamba Juice would have its newest rival in terms of sugary drinks.
+        1k calories, but you get an instant transformation into an alpha male because of it. Dope.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">That metaphor ran away from you. You cross your legs and lean back on the couch that you guys
+        are seated on in front of the Auntie Anne’s kiosk, and watch him dip a pretzel bite into caramel sauce. He’s
+        somehow gotten sauce all over his fingers. He licks it up. Nasty. What has he touched with those?</p>
+      <p class="narrative"> </p>
+      <p class="narrative">He’s nice, though. Sweet. Not cis, either, from what he hinted at when he said that you two
+        are of the same strand, but he rushed to clarify that he does have a weenie, but he’s not exactly a man. You’re
+        just not gonna question it. What matters is that he fits into your T4T preferences.</p>
+      <p class="narrative"> </p>
+      <p class="narrative">You have other pressing questions, though.</p>
+      <p class="narrative"> </p>
+      <p class="dirk">
+        <b>YOU: Hey, if you don’t mind my asking -</b>
+      </p>
+      <p class="jake">
+        <b>JAKE, BUCKTEETH LATCHED ONTO A PRETZEL BITE: *inquisitive hum?*</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Why were you chilling in that stall with your pants on.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Don’t you need to free the goods to get anywhere good with ‘em?</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Kind of illogical.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: :o</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: I wasnt in there to relieve myself as a matter of fact.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: More like.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: Escaping things?</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Escaping gamer musk? Escaping the scent of eight hundred AXE bottles all contemporaneously spritzed in
+          your face?</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: Escaping the heat of battle? Escaping the crust on that Zelda Funko pop at the register?</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: !!! Thats LINK actually.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: I know. I was kidding.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: Right.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: To answer your question,</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: Theres this one fellow that comes in every now and then to speak to me during my shift and hes rather
+          unpleasant.</b>
+      </p>
+      <p class="dirk">
+        <b>YOU: How so?</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: Well.</b>
+      </p>
+      <p class="jake">
+        <b>JAKE: I fancy hes taken a liking to my.</b>
+      </p>
+      <p class="jake"><b>JAKE, POORLY IMITATING A TEXAN ACCENT: *air quotes* </b> <span class> <b>choice ass</b> </span>
+        <b> *air quotes*?</b>
+      </p>
+      <p class="narrative"> </p>
+      <p class="narrative">You slurp up the rest of your freezie, take the ensuing brain freeze like a pro, and take out
+        your phone to text your fucking brother.</p>
+    </div>
+  </div>
+  <div id="afterword">
+    <h2 class="toc-heading">Afterword</h2>
+    <div class="meta">
+      <div id="endnotes">
+        <p class="header">End Notes</p>
+        <blockquote class="userstuff">
+          <p>EDIT 08/18/2023: <b>now with an <a
+                href="https://docs.google.com/document/d/1Y5MD24uryL7oSmOqG6tPMC7mlrSBvuQI1tv7Wb77h-M/edit?usp=sharing"
+                rel="nofollow">ILLUSTRATED PART 2</a> courtesy of <a href="https://twitter.com/zan0tix" rel="nofollow">zan0tix
+                on twitter</a>!!!!!!!</b> genuinely fabulous incredible fantastic work, PLEASEEE check it out and give
+            him a follow this is absolutely wonderful stuff</p>
+          <p>i can't believe i've done this</p>
+          <p>shoutout to my beta readers. here's some highlights from their suggestions:</p>
+          <p><a
+              href="https://media.discordapp.net/attachments/718509640588984413/850953698422423572/unknown.png?width=332&amp;height=601"
+              rel="nofollow">one</a> <a
+              href="https://media.discordapp.net/attachments/718509640588984413/850953858553479168/unknown.png?width=357&amp;height=601"
+              rel="nofollow">two</a></p>
+        </blockquote>
+      </div>
+    </div>
+    <p class="message">Please <a href="http://archiveofourown.org/works/31783993/comments/new">drop by the Archive and
+        comment</a> to let the creator know if you enjoyed their work!</p>
+  </div>
+</body>
+
+</html>

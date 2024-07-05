@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit-00 loves you!</title>
+
+    <link rel="stylesheet" href="/data/css/main.css">
+    <link rel="stylesheet" href="/data/css/home.css">
+
+    <style>
+        .new::after {
+            content: url(/data/img/new.gif);
+            margin-left: 5px;
+        }
+
+        #player-wrapper {
+            position: relative;
+            margin: 10px 0;
+            text-align: center;
+            border: 1px solid;
+            padding: 5px;
+            border-radius: 15px;
+            background: url(https://file.garden/Zkk-azEbhyHsv9a-/light%20green%20gingham.gif);
+    text-align: center;
+    border: 2px outset var(--lightgreen);
+            
+        }
+
+        #audioctrl {
+            width: 100%;
+            background: 0;
+        }
+
+        #song-labels {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+
+            border: 3px outset pink;
+        }
+
+        #song-artist {
+            font-size: 11px;
+            color: hotpink;
+        }
+
+        #playback-position {
+            width: 100%;
+            height: 1px;
+            position: relative;
+            background-color: black;
+        }
+
+        #playback-marker {
+            width: 6px;
+            height: 6px;
+            border-radius: 100%;
+            background-color: black;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        #play-pause {
+            font-family: inherit;
+            font-size: 15px;
+            padding: 0 10px;
+            border-radius: 50%;
+            border: 2px outset pink;
+            background: rgb(255, 224, 229);
+            
+        }
+
+        #play-pause:hover {
+            border: 2px inset pink;
+            color: gray;
+        }
+
+        #song-image {
+            background: url(/playlist/katamari.png);
+            border-radius: 10px;
+            border: 3px solid white;
+            height: 148px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #disclaimer {
+            text-align: center;
+            background: url(https://file.garden/Zkk-azEbhyHsv9a-/light%20green%20gingham.gif);
+            box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.501), inset 2px 2px 3px white;
+            padding: 10px;
+            margin: 15px auto;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 30px;
+            transition: 0.3s ease-in-out;
+        }
+
+        #disclaimer:hover {
+            height: fit-content;
+        }
+
+        #disclaimer>h1 {
+            font-size: 28px;
+            border-radius: 50%;
+        }
+
+        .disclaimer-inner {
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.448);
+            background: rgb(255, 254, 243);
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="rei" src="https://file.garden/Zkk-azEbhyHsv9a-/DITHERED%20rei%20collage%20for%20unit00%20v2.png">
+
+    <section class="layout">
+        <div class="header" style="position: relative;">
+            <div class="random">
+                <p id="randomText">Version 2!</p>
+            </div>
+            <h1>Unit-00 loves you!</h1>
+        </div>
+
+        <div class="leftSide">
+            <h1>sitely</h1>
+            <li>
+                <a href="/index.html">landing</a>
+            </li>
+            <li>
+                <a href="/home.html">home</a>
+            </li>
+            <li>
+                <a href="/about.html">about me</a>
+            </li>
+            <li>
+                <a href="/site.html">
+                    about the site
+                </a>
+            </li>
+            <h3>for me</h3>
+            <li>
+                <a href="/me/blog/">blog</a>
+            </li>
+            <li>
+                <a href="/me/art/">art</a>
+            </li>
+            <li>
+                <a href="/me/homestuck/">homestuck</a>
+            </li>
+            <li>
+                <a href="/me/media/">media</a>
+            </li>
+            <li>
+                <a href="/me/oc/">ocs</a>
+            </li>
+            <h3>for you</h3>
+            <li>
+                <a href="/you/graphics/">graphics</a>
+            </li>
+            <li>
+                <a href="/you/templates/">templates</a>
+            </li>
+            <li>
+                <a href="/you/resources/">resources</a>
+            </li>
+            <h3>etc</h3>
+            <li>
+                <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-01340-a1">guestbook</a>
+            </li>
+            <li>
+                <a class="new" href="/etc/newsletter.html">newsletter</a>
+            </li>
+            <li>
+                <a href="https://neocities.org/site/unit00">profile</a>
+            </li>
+            <br>
+            <div>
+                <a href="https://theatregirl.net/cats/index.php"><img src="https://files.catbox.moe/6vhmco.jpg"></a>
+                <a href="http://fan.koukeisha.net/nya-fanlisting/"><img src="https://files.catbox.moe/mxrboe.jpg"></a>
+                <a href="https://fan-ikaroll.neocities.org/idog/"><br><img
+                        src="https://files.catbox.moe/1w1i3n.png"></a>
+                <a href="https://fan.wings.nu/tamagotchi/"><img src="https://files.catbox.moe/7k06lu.png"></a>
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <br>
+            <iframe width="150" height="150" style="border:none" src="https://dimden.neocities.org/navlink/"
+                name="neolink" id="navlink"></iframe>
+            <br>
+            <div id="player-wrapper" align="center">
+                <div id="song-info">
+                    <div id="song-image">
+                        <div id="song-labels">
+                            <div id="song-name">
+                                Lonely Rolling Star
+                            </div>
+                            <div id="song-artist">Katamari Damacy</div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="audioctrl" controls>
+                    <source src="https://file.garden/Zkk-azEbhyHsv9a-/lonelyrollingstar.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+            </div>
+            <div id="linkme">
+                <h1>Add me!</h1>
+                <img style="filter: none" src="/data/img/unit00v2.gif">
+                <p>Please don't hotlink.</p>
+                <p><a href="/site.html">More info here!</a></p>
+            </div>
+        </div>
+
+        <div class="body" style="position: relative">
+            <div id="tummychii"></div>
+            <div id="disclaimer">
+                <h1>Please hover to read!</h1>
+                <div class="disclaimer-inner">
+                    <p>
+                        <span style="color: hotpink">Don't copy my code <em>without crediting me</em>!</span> Bits and
+                        pieces are fine, but not my whole layout... :/ Feel free to email me with questions about how I
+                        did this or that!
+                    </p>
+                    <p>
+                        This website is built to be viewed on <span style="color: hotpink">desktop, preferably Firefox,
+                            at 1920x1080 resolution or higher</span>. You can readjust your zoom or screen orientation
+                        to view it properly!
+                    </p>
+                    <p>
+                        Thanks for enjoying my site!!!! (๑•̀ㅂ•́)و✧
+                    </p>
+                </div>
+            </div>
+            <div class="flex">
+                <div style="
+                    background: url(https://file.garden/Zkk-azEbhyHsv9a-/rei%20and%20penpen.png);
+                    background-size: contain;
+                    background-repeat: no-repeat; min-width: 250px;"></div>
+                <div>
+                    <p>
+                        Hi hi, i'm Paws (｡･∀･)ﾉﾞ Unit-00 is my personal sanctuary on the internet. I hope you enjoy it
+                        just as much as I do!
+                    </p>
+                    <p>
+                        Unit-00 is rated mostly <a href="">Web-14</a>, but that might change in the future. Stay
+                        tuned!!! I obviously cannot control who sees my content online but I might as well warn you...
+                    </p>
+                    <p>
+                        Unit-00 is powered by Love, Hope, and the Umbilical Cable.
+                    </p>
+
+                    <div class="status">
+                        <a href="https://www.imood.com/users/unit00"><img
+                                src="https://moods.imood.com/display/uname-unit00/fg-000000/trans-1/imood.gif"
+                                alt="The current mood of unit00 at www.imood.com" border="0"></a>
+                        <div id="statuscafe">
+                            <div id="statuscafe-username"></div>
+                            <div id="statuscafe-content"></div>
+                        </div>
+                        <script src="https://status.cafe/current-status.js?name=eneco" defer></script>
+                    </div>
+                </div>
+            </div>
+            <div style="font-size: 12px;">
+                <marquee style="color: lightskyblue; font-style: italic"><img
+                        src="https://file.garden/Zkk-azEbhyHsv9a-/little%20boat.gif">Now running Unit-00 V2... Thank you
+                    for coming... I hope you enjoy the ride! ※ Doing ArtFight this year? Friend me: <a
+                        href="https://artfight.net/~chiikawa">chiikawa on ArtFight.net</a></marquee>
+            </div>
+            <div class="flex">
+                <div id="emailing">
+                    <h1>Wanna chat?</h1>
+                    <img src="https://file.garden/Zkk-azEbhyHsv9a-/pikamai%20headpokel.gif">
+                    <p>Shoot me an email at <a href="">humansongs@proton.me</a>!</p>
+                </div>
+                <div id="guestbook">
+                    <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-01340-a1">
+                        <img src="https://file.garden/Zkk-azEbhyHsv9a-/sign%20my%20guestbook%20cake.png">
+                    </a>
+                </div>
+            </div>
+            <div class="webrings">
+                <h3>webrings</h3>
+                <script src="https://sitesforpalestine.neocities.org/ring.js"></script>
+
+                <a href='https://webring.dinhe.net/prev/unit00.neocities.org'>←</a>
+                Retronaut Webring
+                <a href='https://webring.dinhe.net/next/unit00.neocities.org'>→</a>
+
+                <div id="vocaring">
+                    <script src="/data/js/vocaloidwebring.js"></script>
+                </div>
+
+                <!--START OF SELF INSERT WEBRING-->
+                <div id="selfinsertwebring">
+                    <script src="/data/js/showWebring.js"></script>
+                </div>
+                <!--END OF SELF INSERT WEBRING-->
+
+                <div>
+                    <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+                </div>
+
+                <div id="transring">
+                    <script type="text/javascript"
+                        src="https://transring.neocities.org/onionring-variables.js"></script>
+                    <script type="text/javascript" src="https://transring.neocities.org/nb-widget.js"></script>
+                </div>
+
+                <div id="autiring">
+                    <script type="text/javascript" src="https://macaque.moe/autiring/onionring-variables.js"></script>
+                    <script type="text/javascript" src="https://macaque.moe/autiring/onionring-widget.js"></script>
+                </div>
+
+                <div id='dsring'>
+                    <script type="text/javascript"
+                        src="https://ikaroll.neocities.org/dsring/onion/onionring-variables.js"></script>
+                    <script type="text/javascript"
+                        src="https://ikaroll.neocities.org/dsring/onion/onionring-widget.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Unit-00 ♪ 2023 - 2024 <img src="https://file.garden/Zkk-azEbhyHsv9a-/yellow%20flower%20pixel.png"> Coded
+            with my own two <a href="/about.html">paws</a>
+        </div>
+    </section>
+</body>
+
+</html>

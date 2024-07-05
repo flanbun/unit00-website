@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MS Gothic', Arial, Helvetica, sans-serif;
+}
+
+#home {
+    position: fixed;
+    bottom: -30px;
+    left: 0px;
+    font-size: 24px;
+}
+
+.floatie1 {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    z-index: 700;
+    pointer-events: none;
+}
+
+.floatie2 {
+    position: absolute;
+    bottom: -15px;
+    right: 45px;
+    z-index: 800;
+    filter: drop-shadow(0 0 4px white);
+    pointer-events: none;
+}
+
+.layout {
+    border: 1px dashed gray;
+    height: 450px;
+    width: 650px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    position: fixed;
+}
+
+.content {
+    overflow-y: auto;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/sunflower%20hearts%20pale%20bg.gif);
+    background-size: 120px;
+    background-position: center
+}
+
+.content p {
+    background: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.541);
+}
+
+.censor {
+    background: black;
+    color: black;
+}
+
+.censor:hover {
+    color: white;
+}
+
+.blockquote {
+    box-sizing: border-box;
+    width: fit-content;
+    border-bottom: limegreen 1px dotted;
+    margin: 20px 0;
+    background: rgba(203, 238, 144, 0.335);
+    padding: 10px 30px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.blockquote::before {
+    content: url(https://files.catbox.moe/6o59sy.gif);
+    position: absolute;
+    left: -5px;
+    top: -15px;
+}
+
+.blockquote .credit {
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    font-size: 12px;
+}
+
+.endbox {
+    margin-top: 30px;
+    padding: 15px;
+    border: 2px dashed rgb(255, 154, 174);
+    position: relative;
+}
+
+.endbox b {
+    color: rgb(255, 154, 174);
+}
+
+.endbox::after {
+    content: url(https://files.catbox.moe/hbmvlf.gif);
+    transform: rotate(-10deg);
+    left: -30px;
+    top: -20px;
+    position: absolute;
+}
+
+/* Style the tab */
+.tab {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/tiny%20pink%20flower%20diagonal%20bg.gif);
+    width: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.tab h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+.tab
+h2,
+h3,
+p {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    color: rgb(165, 165, 165);
+    background: white;
+    padding: 5px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'MS Gothic', Arial, Helvetica, sans-serif;
+    border: 1px dotted white;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    border: 1px dotted black;
+    color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    border: 1px dotted black;
+    color: rgb(0, 0, 0);
+}
+
+/* Style the tab content */
+.tabcontent {
+    padding: 30px;
+}

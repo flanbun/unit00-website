@@ -1,0 +1,278 @@
+body {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/sunflower%20hearts%20pale%20bg.gif);
+    background-size: 10px;
+}
+
+.layout {
+
+    position: relative;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: fit-content;
+
+    display: grid;
+    grid:
+        "header header header" auto "leftSide body rightSide" 1fr "footer footer footer" auto / 160px 500px 160px;
+
+    gap: 8px;
+}
+
+.box {
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    width: 800px;
+    margin: 0;
+    font-size: 72px;
+    text-align: center;
+    bottom: -0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: hotpink;
+    text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white, 0 0 10px hotpink;
+}
+
+.leftSide {
+    padding: 5px;
+    grid-area: leftSide;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+}
+
+.leftSide h1 {
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+    font-size: 34px;
+    margin: 0;
+    margin-bottom: 5px;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/light%20green%20gingham.gif);
+    text-align: center;
+    border-radius: 50%;
+    border: 2px outset var(--lightgreen);
+}
+
+.leftSide h3 {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/light%20green%20gingham.gif);
+    text-align: center;
+    border-radius: 50%;
+    border: 2px outset var(--lightgreen);
+}
+
+h3 {
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+    font-size: 26px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed var(--lightgreen);
+}
+
+.leftSide li {
+    list-style: none;
+    margin-top: 2px;
+}
+
+.leftSide li::before {
+    content: "♪";
+}
+
+.leftSide li a {
+    background: white;
+    box-shadow: 0 0 5px 2px white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.leftSide li a:hover {
+
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+}
+
+.body {
+    grid-area: body;
+    padding: 10px;
+    border: 0px blue dashed;
+    box-shadow: 0 0 5px 5px white;
+    border-radius: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+}
+
+.status {
+    text-align: center;
+}
+
+#statuscafe {
+    border: 1px dashed var(--lightgreen);
+    padding: 10px;
+    text-align: center;
+}
+
+.webrings {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/strawberries%20pale%20bg.gif);
+    text-align: center;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px dashed var(--lightgreen);
+    margin: 10px 20px;
+    border-radius: 50%;
+    padding: 30px 15px;
+}
+
+.rightSide {
+    grid-area: rightSide;
+    text-align: right;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: hotpink;
+}
+
+.footer a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px hotpink, -1px -1px hotpink, -1px 1px hotpink, 1px -1px hotpink, 0 0 3px hotpink;
+    color: white;
+}
+
+#rei {
+    position: fixed;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.264));
+    z-index: -1;
+    left: -10%;
+    height: 120vh;
+}
+
+#navlink {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#navlink:hover {
+    border-radius: 0px;
+}
+
+#linkme {
+    padding: 10px;
+}
+
+#linkme p,
+h1 {
+    margin: 0;
+}
+
+#linkme h1 {
+    background: linear-gradient(to right, hotpink, transparent);
+    border-radius: 50px;
+    padding: 2px 5px;
+}
+
+#linkme img {
+    width: 81px;
+    margin: 10px auto;
+}
+
+.random {
+    position: absolute;
+    bottom: 5px;
+    right: 15%;
+    z-index: 1;
+    color: white;
+    font-family: kiwisoda, sans-serif;
+    font-size: 32px;
+    text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black, 0 0 3px black;
+    transform: rotate(-15deg);
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.random p {
+    margin: 0;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+
+    50% {
+        transform: scale(1.0) rotate(-12deg);
+    }
+}
+
+#tummychii {
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/tummychii.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+}
+
+#emailing {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/pink%20heart%20gingham%20bg.gif);
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.293), inset 2px 2px 3px rgb(255, 255, 255);
+    border: 1px hotpink dashed;
+}
+
+#emailing img {
+    width: 50px;
+}
+
+#emailing p, h1 {
+    margin: 0;
+}
+
+#emailing a {
+    color: hotpink;
+    text-shadow: 0 0 3px white;
+}
+
+#emailing h1 {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+}
+
+#guestbook {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.308));
+    transition: 0.2s;
+}
+
+#guestbook img {
+    width: 100%;
+}
+
+#guestbook:hover {
+    transform: scale(1.1) rotate(-5deg);
+}

@@ -1,0 +1,54 @@
+index.html
+about.html
+site.html
+sitely.html(?)
+
+art gallery
+oc gallery
+music
+homestuck
+
+other sites
+graphics
+templates
+resources
+
+guestbook
+updates
+profile
+link out
+
+========================
+
+LOOKING FOR
+
++ minimal (less clutter, use more folders)
++ simple, less img heavy design
++ USE /data/ FOLDER - host images on site
+itself - NO MORE HOTLINKING
++ use grids where possible, less flexboxes
++ redesign blog
++ redesign artgal
+
+========================
+
+ISSUES W/ CURRENT LAYOUT
+
++ odd color palette - cute but not cohesive. focus
+more on black + white with bright accent colors
+
++ everything is busy in a way that isnt fun. theres
+a way to balance busy and negative space that DOESNT
+look like this.
+
++ make it messy in a nice way
+
+========================
+
+INSPO (credit on site page)
+
++ bisuko (tiger carnival)
++ callus
++ ruralrose
++ tomorrowsbreakfast
++ komichi

@@ -16,8 +16,8 @@ html {
 }
 
 ::selection {
-    background: white;
-    color: black;
+    background: var(--lightgreen);
+    color: white;
 }
 
 img:hover {

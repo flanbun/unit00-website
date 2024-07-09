@@ -15,7 +15,7 @@
             max-width: 850px;
             height: 600px;
 
-            display: grid;
+            display: grid; 
             grid:
                 "topbox mapbox" 1fr "bottombox mapbox" 1fr / 1fr 1fr;
             gap: 8px;
@@ -26,17 +26,10 @@
             text-align: center;
             font-size: 32px;
             margin: 5px auto;
-            background: lightyellow;
+            background: white;
             border-radius: 50%;
-            border: 3px outset rgb(255, 255, 179);
-        }
-
-        h1::before {
-            content: '! ';
-        }
-
-        h1::after {
-            content: ' !';
+            border: 3px outset ;
+            text-shadow: ;
         }
         
         hr {
@@ -59,20 +52,34 @@
         }
 
         .info {
+            border-radius: 30px;
             border: 1px solid pink;
-            padding: 10px;
+            padding: 20px;
             overflow-y: auto;
             max-height: 300px;
+            background: url(https://file.garden/Zkk-azEbhyHsv9a-/img-2024-07-08-22-50-04.png);
+        }
+
+        p {
+            background: white;
+            box-shadow: 0 0 10px 10px white;
+            margin: 20px auto;
         }
 
         .sitemap {
+            border-radius: 30px;
             border: 1px solid lightblue;
-            padding: 10px;
+            padding: 20px;
             height: 100%;
+            background: url(https://file.garden/Zkk-azEbhyHsv9a-/img-2024-07-08-22-44-28.png);
+            background-size: cover;
+            background-position: center;
         }
 
         .map {
-            border: 1px dotted gray;
+            background: white;
+            box-shadow: 0 0 10px 10px white;
+            padding: 0px;
             height: 400px;
             overflow-y: auto;
             margin: 10px 20px;

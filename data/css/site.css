@@ -1,0 +1,106 @@
+.layout {
+    width: 100%;
+    max-width: 850px;
+    height: 600px;
+
+    display: grid; 
+    grid:
+        "topbox mapbox" 1fr "bottombox mapbox" 1fr / 1fr 1fr;
+    gap: 0px;
+    margin: 150px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 5px auto;
+    background: white;
+    border-radius: 50%;
+    border: 3px var(--lightgreen) solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px dashed var(--lightgreen);
+}
+
+ul {
+    padding-left: 25px;
+    line-height: 1.25em;
+}
+
+li {
+    list-style: '※ ';
+}
+
+li a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.topbox {
+    grid-area: topbox;
+}
+
+.mapbox {
+    grid-area: mapbox;
+}
+
+.bottombox {
+    grid-area: bottombox;
+}
+
+.info {
+    box-shadow: inset 0 0 10px 10px white;
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 300px;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/img-2024-07-08-22-50-04.png);
+}
+
+p {
+    background: white;
+    box-shadow: 0 0 10px 10px white;
+    margin: 20px auto;
+}
+
+.sitemap {
+    box-shadow: inset 0 0 10px 10px white;
+    padding: 30px;
+    height: 100%;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/img-2024-07-08-22-44-28.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.map {
+    background: white;
+    box-shadow: 0 0 10px 10px white;
+    padding: 0px;
+    height: 400px;
+    overflow-y: auto;
+    margin: 10px 20px;
+}
+
+.buttons {
+    box-shadow: inset 0 0 10px 10px white;
+    padding: 30px;
+    overflow-y: auto;
+    height: 300px;
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/img-2024-07-09-00-43-59.png);
+}
+
+.gohome {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.gohome a {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--lightgreen);
+    text-shadow: 1px 1px 0 white, 3px 3px 5px rgba(255, 105, 180, 0.401);
+}

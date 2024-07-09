@@ -1,0 +1,122 @@
+* {
+    image-rendering: pixelated;
+}
+
+body {
+    font-size: 16px;
+}
+
+#bg {
+    background: url(https://file.garden/Zkk-azEbhyHsv9a-/sad%20doggy%20notepad%20memo);
+    width: 675px;
+    height: 1024px;
+    position: relative;
+    margin: 20px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.46);
+    padding: 80px;
+    padding-top: 320px;
+    padding-bottom: 170px;
+    transition: 0.3s;
+}
+
+#bg:hover::after {
+    display: none;
+}
+
+#main {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    box-shadow: 0 0 20px 20px white;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.left-speech-bubble {
+    position: relative;
+    background: white;
+    border-radius: .4em;
+    padding: 10px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+.left-speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: white;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+    margin-left: -19px;
+}
+
+.right-speech-bubble {
+    position: relative;
+    background: white;
+    border-radius: .4em;
+    padding: 10px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+.right-speech-bubble:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left-color: white;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -10px;
+    margin-right: -19px;
+}
+
+.speech-bubble-content {
+    height: 130px;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 1.15em;
+}
+
+.bubble-icon {
+    width: 150px;
+    border: 1px dashed hotpink;
+}
+
+.flex {
+    display: flex;
+    gap: 25px;
+}
+
+.flex + .flex {
+    margin-top: 15px;
+}
+
+.home {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.home a {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: var(--lightgreen);
+}
+
+.home a:hover {
+    color: white;
+}

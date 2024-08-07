@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORIGINMAIL</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            background: url(/dnd/data/defaultbg.png)
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .emails {
+            margin: 50px auto;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .emails .email {
+            border: 1px gray solid;
+            border-radius: 5px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+            background: linear-gradient(rgb(239, 239, 239), rgb(188, 188, 188));
+        }
+
+        .email-info {
+            padding: 10px 5px;
+        }
+
+        .email-info-table {
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+
+        .email-info-table td:nth-child(odd) {
+            text-align: right;
+            color: gray;
+            width: 20%;
+        }
+
+        .email-info-table td:nth-child(even) {
+            padding-left: 10px;
+        }
+
+        .email-body {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            background: white;
+            border: 1px gray solid;
+            box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5);
+            margin: 8px;
+            padding: 15px 10px;
+        }
+
+        .email-footer {
+            color: gray;
+            margin: 8px;
+            font-size: 8px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        Originmail: An e-mail service for the people, by the people.
+    </div>
+    <div class="emails">
+        <h1>Phesna's Inbox</h1>
+        <div class="email">
+            <div class="email-info">
+                <table class="email-info-table">
+                    <tr>
+                        <td>From:</td>
+                        <td>info@seashell.org</td>
+                    </tr>
+                    <tr>
+                        <td>To:</td>
+                        <td>You!</td>
+                    </tr>
+                    <tr>
+                        <td>CC:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td>Welcome!</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="email-body">
+                <p>
+                    Welcome to Originmail, an e-mail service developed by Team Seashell.
+                </p>
+                <p>
+                    We are proud to be Genesis-III's most secure online communications service, and would like to remain that way. Please report any bugs to support@seashell.org.
+                </p>
+                <p>
+                    Want to customize your background? Talk to Tati.
+                </p>
+                <p>
+                    If you have any questions, feel free to send an email to info@seashell.org.
+                </p>
+                <p>
+                    Thank you for using Originmail!
+                </p>
+            </div>
+            <div class="email-footer">
+                Sent at 00:00 on 0/0/0000.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
